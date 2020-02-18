@@ -1,0 +1,2 @@
+execute if block ~1 ~ ~-1 minecraft:black_concrete run scoreboard players add $gol.neighbors.alive.count gol.var 1
+execute unless score $gol.neighbors.alive.count gol.var matches 4 run function gol:_run/check_neighbors/blocks/block_x_neg_z_pos

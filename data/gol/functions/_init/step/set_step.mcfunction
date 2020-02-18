@@ -1,0 +1,2 @@
+execute if score @s step matches 1.. run scoreboard players operation $gol.step gol.var = @s step
+execute if score @s step matches ..0 run tellraw @s [{"text":"[ERROR] ", "color":"red"}, {"text":"Step needs to be a positive number.", "color":"white"}]
